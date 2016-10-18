@@ -6,6 +6,8 @@ echo "---> Listing stuff that is in the current dir..."
 
 ls -la
 
+cd ${HOME}
+
 if [ -d node_modules ]; then
     # all deps contents to tar stream
     tar cf - node_modules
